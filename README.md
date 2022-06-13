@@ -1,9 +1,9 @@
 # encrypted
-code for cryptide's sequece identification
+Code for cryptide's sequences identification.
 
 For usage, python3 is necessary.
 
-# Example: python3 encrypted.py -f fastafile.fasta -t protein -cl 2 -l 500 3000 -act antibacterial -n 1
+## Example: python3 encrypted.py -f fastafile.fasta -t protein -cl 2 -l 500 3000 -act antibacterial -n 1
 
 File (-f): a fasta or multifasta file.
 
@@ -19,12 +19,12 @@ Number (-n): a way to separate different predictions. You can type any number.
 
 Help (-help): print in the screen the information above.
 
-# Exit files:
+## Exit files:
 
 CSV table with predicted peptides and their physicochemical properties;
 
 CSV table with MS/MS peptides fragmentation (mass spectrometry data).
 
-# Plotting
+## Plotting
 
 If the user wants to visualize the data, a three dimensional plot is additionally available. The csv file name needs to be added to the code (pca_01.py) line 9, under ''.
