@@ -6,7 +6,7 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
 #open table file
-df1 = pd.read_csv('leish_df.csv')
+df1 = pd.read_csv('')
 del df1["Unnamed: 0"]
 
 # Scale data before applying PCA
