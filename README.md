@@ -1,6 +1,9 @@
 # encrypted
 Code for cryptide's sequences identification.
 
+Quote:
+>Santos BPO, Alves ESF, Ferreira CS, Ferreira-Silva A, Góes-Neto A, Verly RM, Lião LM, Oliveira SC, de Magalhães MTQ. Schistocins: Novel antimicrobial peptides encrypted in the Schistosoma mansoni Kunitz Inhibitor SmKI-1. Biochim Biophys Acta Gen Subj. 2021 Nov;1865(11):129989. [doi: 10.1016/j.bbagen.2021.129989](https://www.sciencedirect.com/science/article/pii/S0304416521001483). Epub 2021 Aug 10. PMID: 34389467.
+
 For usage, python3 is necessary.
 
 ### Example: 
