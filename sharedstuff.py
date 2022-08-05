@@ -42,7 +42,10 @@ aux = ""
 def chunks(iterable, n):
 	iterable = iter(iterable)
 	while True:
-		yield chain([next(iterable)], islice(iterable, n-1))
+		try:
+			yield chain([next(iterable)], islice(iterable, n-1))
+		except StopIteration:
+			return
 
 #############################################################################
 # Abrir o arquivo original, contar a quantidade de linhas e dividir no
