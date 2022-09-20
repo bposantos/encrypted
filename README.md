@@ -34,4 +34,16 @@ CSV table with MS/MS peptides fragmentation (mass spectrometry data).
 
 ### Plotting
 
-If the user wants to visualize the data, a three dimensional plot is additionally available. The csv file name needs to be added to the code (pca_01.py) line 9, under '    '.
+If the user wants to visualize the data, a three dimensional plot is additionally available.
+
+- **File (-f):** a csv file originated by encrypted.py.
+
+- **Number of clusters (-cl):** kmeans clusterization. User defined number of clusters.
+
+- **Output (-o):** name of the output file.
+
+
+### Example: 
+```
+python3 pca_v2.py -f dataframe.csv -cl 3 -o clusters01
+```
