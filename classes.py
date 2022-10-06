@@ -601,6 +601,7 @@ class setting_peptide:
 				mH = round(math.sqrt(vsin**2+vcos**2)/len(element),2)
 				dicio_frags1[element]['Hydrophobic_moment'] = mH
 
+
 	def aa_percentage_3(fragments_list):
 		for fragment in fragments_list:
 			for element in dicio_frags1:
@@ -688,6 +689,14 @@ class setting_peptide:
 			dic2[indice + cabecalho4] = fragment
 			dicio_frags3['Fragments'] =  dic2
 
+#	def f(row):
+#		for key, value in fasta.items():
+#			print(row['Peptides'])
+#			if row['Peptides'] == fasta[value]:
+#				val = fasta[key]
+#			else:
+#				None
+#			return val
 class msms:
 
 	def massa(proteina):

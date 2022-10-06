@@ -41,7 +41,6 @@ if argstype == 'peptide':
 
 	import peptide_function
 
-
 ##----------------------------------------------------------------------------------------------
 ## Exporting CSV file
 ##----------------------------------------------------------------------------------------------
@@ -68,6 +67,7 @@ with open('newfile.csv') as file:
 	df = pd.read_csv('newfile.csv')
 
 df1 = df.columns
+#print(df)
 df.columns = ['Peptides','Features', 'Values']
 df.loc[-1] = df1
 df.index = df.index +1
@@ -77,7 +77,22 @@ df_sort = df_reorder.sort_values('Peptides')
 df2=pd.DataFrame(df_sort.groupby('Features')['Peptides'].apply(list).to_dict())
 df3=pd.DataFrame(df_sort.groupby('Features')['Values'].apply(list).to_dict())
 df3['Peptides'] = df2[u'Amidated_Mass']
-#print df3
+
+########################### Naming the peptides, in case the --type = peptide ##########################################
+
+lista_column_names_df = []
+if args.type == 'peptide':
+	for idx, row in df3['Peptides'].items():
+		if row in d.values():
+			lista_column_names_df.append(list(d.keys())[list(d.values()).index(row)])
+		else:
+			lista_column_names_df.append(None)
+	#print('lista',lista_column_names_df)
+
+	df3['Name'] = lista_column_names_df
+
+########################################################################################################################
+
 df3.to_csv('dataframe'+args.number+'.csv', index=True)
 
 ##----------------------------------------------------------------------------------------------
