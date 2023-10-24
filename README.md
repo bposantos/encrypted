@@ -1,4 +1,5 @@
 # encrypted
+![Encrypted Logo](https://github.com/bposantos/encrypted/blob/main/encrypted-logo.png?raw=true)
 Code for cryptide's sequences identification.
 
 Quote:
